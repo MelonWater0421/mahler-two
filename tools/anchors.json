@@ -4,68 +4,392 @@
   "silence_floor_db": -37.5,
   "movements": {
     "1": [
-      {"bar": 1, "sec": 0.4, "reh": "Opening", "dynamic": "ff", "event": "Lower string furious sixteenth-note recitative attack"},
-      {"bar": 19, "sec": 54.0, "reh": "Reh. 1", "dynamic": "p", "event": "Oboe and English horn lament over marching bass ostinato"},
-      {"bar": 43, "sec": 128.5, "reh": "Reh. 2", "dynamic": "pp", "event": "First lyrical E major vision in muted strings"},
-      {"bar": 63, "sec": 189.0, "reh": "Reh. 4", "dynamic": "ff", "event": "Sudden return of C minor funeral march"},
-      {"bar": 118, "sec": 356.0, "reh": "Reh. 7", "dynamic": "ppp", "event": "Subterranean development opening in pizzicato basses"},
-      {"bar": 146, "sec": 442.0, "reh": "Reh. 9", "dynamic": "mp", "event": "English horn pastoral mirage in C major"},
-      {"bar": 207, "sec": 625.0, "reh": "Reh. 13", "dynamic": "ff", "event": "First entry of Dies Irae chorale fragment in horns"},
-      {"bar": 254, "sec": 772.0, "reh": "Reh. 16", "dynamic": "fff", "event": "Cataclysmic E-flat minor orchestral storm peak"},
-      {"bar": 291, "sec": 886.0, "reh": "Reh. 17", "dynamic": "ffff", "event": "Pesante chromatic death-march collapse"},
-      {"bar": 325, "sec": 992.0, "reh": "Reh. 20", "dynamic": "ff", "event": "Recapitulation: shattering return of Totenfeier recitative"},
-      {"bar": 392, "sec": 1190.0, "reh": "Reh. 24", "dynamic": "ppp", "event": "Coda funeral procession sinking into the abyss"},
-      {"bar": 438, "sec": 1326.0, "reh": "Reh. 27", "dynamic": "ff", "event": "Final descending chromatic scale and dry pizzicato stroke"},
-      {"bar": 445, "sec": 1354.0, "reh": "Fine", "dynamic": "p", "event": "Movement I conclusion"}
+      {
+        "bar": 1,
+        "sec": 0.4,
+        "reh": "Opening",
+        "dynamic": "ff",
+        "event": "Lower string furious sixteenth-note recitative attack"
+      },
+      {
+        "bar": 19,
+        "sec": 54.0,
+        "reh": "Reh. 1",
+        "dynamic": "p",
+        "event": "Oboe and English horn lament over marching bass ostinato"
+      },
+      {
+        "bar": 43,
+        "sec": 128.5,
+        "reh": "Reh. 2",
+        "dynamic": "pp",
+        "event": "First lyrical E major vision in muted strings"
+      },
+      {
+        "bar": 63,
+        "sec": 189.0,
+        "reh": "Reh. 4",
+        "dynamic": "ff",
+        "event": "Sudden return of C minor funeral march"
+      },
+      {
+        "bar": 118,
+        "sec": 356.0,
+        "reh": "Reh. 7",
+        "dynamic": "ppp",
+        "event": "Subterranean development opening in pizzicato basses"
+      },
+      {
+        "bar": 146,
+        "sec": 442.0,
+        "reh": "Reh. 9",
+        "dynamic": "mp",
+        "event": "English horn pastoral mirage in C major"
+      },
+      {
+        "bar": 207,
+        "sec": 625.0,
+        "reh": "Reh. 13",
+        "dynamic": "ff",
+        "event": "First entry of Dies Irae chorale fragment in horns"
+      },
+      {
+        "bar": 254,
+        "sec": 772.0,
+        "reh": "Reh. 16",
+        "dynamic": "fff",
+        "event": "Cataclysmic E-flat minor orchestral storm peak"
+      },
+      {
+        "bar": 291,
+        "sec": 886.0,
+        "reh": "Reh. 17",
+        "dynamic": "ffff",
+        "event": "Pesante chromatic death-march collapse"
+      },
+      {
+        "bar": 325,
+        "sec": 992.0,
+        "reh": "Reh. 20",
+        "dynamic": "ff",
+        "event": "Recapitulation: shattering return of Totenfeier recitative"
+      },
+      {
+        "bar": 392,
+        "sec": 1190.0,
+        "reh": "Reh. 24",
+        "dynamic": "ppp",
+        "event": "Coda funeral procession sinking into the abyss"
+      },
+      {
+        "bar": 438,
+        "sec": 1326.0,
+        "reh": "Reh. 27",
+        "dynamic": "ff",
+        "event": "Final descending chromatic scale and dry pizzicato stroke"
+      },
+      {
+        "bar": 445,
+        "sec": 1354.0,
+        "reh": "Fine",
+        "dynamic": "p",
+        "event": "Movement I conclusion"
+      }
     ],
     "2": [
-      {"bar": 1, "sec": 0.3, "reh": "Opening", "dynamic": "p", "event": "Graceful A-flat major Ländler in muted first violins"},
-      {"bar": 39, "sec": 82.0, "reh": "Reh. 29", "dynamic": "mp", "event": "Cello soaring counter-melody with portamento"},
-      {"bar": 85, "sec": 181.0, "reh": "Reh. 32", "dynamic": "pp", "event": "G-sharp minor agitated triplet episode (Stürmisch)"},
-      {"bar": 133, "sec": 284.0, "reh": "Reh. 34", "dynamic": "p", "event": "Return of Ländler dressed in delicate cello pizzicato"},
-      {"bar": 166, "sec": 354.0, "reh": "Reh. 35", "dynamic": "ff", "event": "Second dark triplet storm with brass cries"},
-      {"bar": 211, "sec": 450.0, "reh": "Reh. 37", "dynamic": "p", "event": "Final return of Ländler with harp and woodwind filigree"},
-      {"bar": 275, "sec": 586.0, "reh": "Reh. 39", "dynamic": "pp", "event": "Nostalgic coda fading into memory"},
-      {"bar": 299, "sec": 638.0, "reh": "Fine", "dynamic": "ppp", "event": "Movement II conclusion"}
+      {
+        "bar": 1,
+        "sec": 0.29,
+        "reh": "Opening",
+        "dynamic": "p",
+        "event": "Graceful A-flat major Ländler in muted first violins"
+      },
+      {
+        "bar": 39,
+        "sec": 78.56,
+        "reh": "Reh. 29",
+        "dynamic": "mp",
+        "event": "Cello soaring counter-melody with portamento"
+      },
+      {
+        "bar": 85,
+        "sec": 173.41,
+        "reh": "Reh. 32",
+        "dynamic": "pp",
+        "event": "G-sharp minor agitated triplet episode (Stürmisch)"
+      },
+      {
+        "bar": 133,
+        "sec": 272.08,
+        "reh": "Reh. 34",
+        "dynamic": "p",
+        "event": "Return of Ländler dressed in delicate cello pizzicato"
+      },
+      {
+        "bar": 166,
+        "sec": 339.15,
+        "reh": "Reh. 35",
+        "dynamic": "ff",
+        "event": "Second dark triplet storm with brass cries"
+      },
+      {
+        "bar": 211,
+        "sec": 431.12,
+        "reh": "Reh. 37",
+        "dynamic": "p",
+        "event": "Final return of Ländler with harp and woodwind filigree"
+      },
+      {
+        "bar": 275,
+        "sec": 561.41,
+        "reh": "Reh. 39",
+        "dynamic": "pp",
+        "event": "Nostalgic coda fading into memory"
+      },
+      {
+        "bar": 299,
+        "sec": 611.23,
+        "reh": "Fine",
+        "dynamic": "ppp",
+        "event": "Movement II conclusion"
+      }
     ],
     "3": [
-      {"bar": 1, "sec": 0.2, "reh": "Opening", "dynamic": "ff", "event": "Three dry timpani solo blows launching the 3/8 Scherzo"},
-      {"bar": 13, "sec": 15.0, "reh": "Reh. 28", "dynamic": "p", "event": "Clarinet solo sinuous Fischpredigt melody"},
-      {"bar": 97, "sec": 108.0, "reh": "Reh. 32", "dynamic": "f", "event": "Wry E-flat clarinet parody with rute and pizzicato"},
-      {"bar": 190, "sec": 210.0, "reh": "Reh. 36", "dynamic": "ff", "event": "First Trio: blazing D major brass fanfare"},
-      {"bar": 272, "sec": 302.0, "reh": "Reh. 40", "dynamic": "p", "event": "Return of perpetual-motion C minor whirlpool"},
-      {"bar": 348, "sec": 386.0, "reh": "Reh. 44", "dynamic": "f", "event": "Second Trio and rising orchestral vortex"},
-      {"bar": 465, "sec": 514.0, "reh": "Reh. 50", "dynamic": "ffff", "event": "The Aufschrei (Totengreif): shattering B-flat minor scream of despair"},
-      {"bar": 541, "sec": 598.0, "reh": "Reh. 53", "dynamic": "pp", "event": "Exhausted contrabassoon and tam-tam epilogue"},
-      {"bar": 581, "sec": 642.0, "reh": "Attacca", "dynamic": "ppp", "event": "Seamless attacca transition into Urlicht"}
+      {
+        "bar": 1,
+        "sec": 0.22,
+        "reh": "Opening",
+        "dynamic": "ff",
+        "event": "Three dry timpani solo blows launching the 3/8 Scherzo"
+      },
+      {
+        "bar": 13,
+        "sec": 16.19,
+        "reh": "Reh. 28",
+        "dynamic": "p",
+        "event": "Clarinet solo sinuous Fischpredigt melody"
+      },
+      {
+        "bar": 97,
+        "sec": 116.55,
+        "reh": "Reh. 32",
+        "dynamic": "f",
+        "event": "Wry E-flat clarinet parody with rute and pizzicato"
+      },
+      {
+        "bar": 190,
+        "sec": 226.63,
+        "reh": "Reh. 36",
+        "dynamic": "ff",
+        "event": "First Trio: blazing D major brass fanfare"
+      },
+      {
+        "bar": 272,
+        "sec": 325.91,
+        "reh": "Reh. 40",
+        "dynamic": "p",
+        "event": "Return of perpetual-motion C minor whirlpool"
+      },
+      {
+        "bar": 348,
+        "sec": 416.56,
+        "reh": "Reh. 44",
+        "dynamic": "f",
+        "event": "Second Trio and rising orchestral vortex"
+      },
+      {
+        "bar": 465,
+        "sec": 554.7,
+        "reh": "Reh. 50",
+        "dynamic": "ffff",
+        "event": "The Aufschrei (Totengreif): shattering B-flat minor scream of despair"
+      },
+      {
+        "bar": 541,
+        "sec": 645.35,
+        "reh": "Reh. 53",
+        "dynamic": "pp",
+        "event": "Exhausted contrabassoon and tam-tam epilogue"
+      },
+      {
+        "bar": 581,
+        "sec": 692.83,
+        "reh": "Attacca",
+        "dynamic": "ppp",
+        "event": "Seamless attacca transition into Urlicht"
+      }
     ],
     "4": [
-      {"bar": 1, "sec": 0.4, "reh": "Opening", "dynamic": "p", "event": "Contralto solo unaccompanied entry: 'O Röschen rot!'"},
-      {"bar": 4, "sec": 10.5, "reh": "Chorale", "dynamic": "pp", "event": "Solemn D-flat major brass chorale halo"},
-      {"bar": 36, "sec": 82.0, "reh": "Reh. 1", "dynamic": "mp", "event": "B-flat minor lament: 'Der Mensch liegt in größter Not!'"},
-      {"bar": 67, "sec": 152.0, "reh": "Reh. 2", "dynamic": "p", "event": "Clarinet, harp, and solo violin celestial consolation"},
-      {"bar": 104, "sec": 236.0, "reh": "Reh. 3", "dynamic": "f", "event": "Ardent declaration of faith: 'Ich bin von Gott und will wieder zu Gott!'"},
-      {"bar": 127, "sec": 288.0, "reh": "Coda", "dynamic": "ppp", "event": "Ascent into eternal light ('Ewig, ewig')"},
-      {"bar": 140, "sec": 318.0, "reh": "Attacca", "dynamic": "pppp", "event": "Dissolution into Finale outburst"}
+      {
+        "bar": 1,
+        "sec": 0.4,
+        "reh": "Opening",
+        "dynamic": "p",
+        "event": "Contralto solo unaccompanied entry: 'O Röschen rot!'"
+      },
+      {
+        "bar": 4,
+        "sec": 10.57,
+        "reh": "Chorale",
+        "dynamic": "pp",
+        "event": "Solemn D-flat major brass chorale halo"
+      },
+      {
+        "bar": 36,
+        "sec": 82.57,
+        "reh": "Reh. 1",
+        "dynamic": "mp",
+        "event": "B-flat minor lament: 'Der Mensch liegt in größter Not!'"
+      },
+      {
+        "bar": 67,
+        "sec": 153.06,
+        "reh": "Reh. 2",
+        "dynamic": "p",
+        "event": "Clarinet, harp, and solo violin celestial consolation"
+      },
+      {
+        "bar": 104,
+        "sec": 237.64,
+        "reh": "Reh. 3",
+        "dynamic": "f",
+        "event": "Ardent declaration of faith: 'Ich bin von Gott und will wieder zu Gott!'"
+      },
+      {
+        "bar": 127,
+        "sec": 290.0,
+        "reh": "Coda",
+        "dynamic": "ppp",
+        "event": "Ascent into eternal light ('Ewig, ewig')"
+      },
+      {
+        "bar": 140,
+        "sec": 320.21,
+        "reh": "Attacca",
+        "dynamic": "pppp",
+        "event": "Dissolution into Finale outburst"
+      }
     ],
     "5": [
-      {"bar": 1, "sec": 0.2, "reh": "Opening", "dynamic": "ffff", "event": "Wild herausfahrend: return of the Scherzo scream of despair"},
-      {"bar": 43, "sec": 122.0, "reh": "Reh. 3", "dynamic": "pp", "event": "Distant offstage horn call ('The Crier in the Wilderness')"},
-      {"bar": 62, "sec": 176.0, "reh": "Reh. 4", "dynamic": "p", "event": "Solemn Dies Irae chorale in woodwinds and pizzicato strings"},
-      {"bar": 97, "sec": 276.0, "reh": "Reh. 7", "dynamic": "mp", "event": "Contralto Resurrection motif foreshadowed in winds"},
-      {"bar": 142, "sec": 404.0, "reh": "Reh. 10", "dynamic": "fff", "event": "Blazing brass Resurrection Chorale proclamation"},
-      {"bar": 194, "sec": 552.0, "reh": "Reh. 14", "dynamic": "ffff", "event": "Apocalyptic percussion crescendo (Graveyards Burst Open)"},
-      {"bar": 220, "sec": 626.0, "reh": "Reh. 15", "dynamic": "ff", "event": "Grand Dead March (Allegro energico) in trombones and tutti"},
-      {"bar": 310, "sec": 882.0, "reh": "Reh. 21", "dynamic": "f", "event": "Spatial collision of onstage storm and offstage military brass band"},
-      {"bar": 380, "sec": 1082.0, "reh": "Reh. 25", "dynamic": "fff", "event": "Passionate F-sharp minor anguish cry ('O glaube')"},
-      {"bar": 448, "sec": 1275.0, "reh": "Reh. 29", "dynamic": "pp", "event": "Der große Appell: Four offstage trumpets, horns, flute & piccolo birdcall"},
-      {"bar": 472, "sec": 1344.0, "reh": "Reh. 31", "dynamic": "ppp", "event": "Chorus a cappella entry: 'Aufersteh'n, ja aufersteh'n wirst du'"},
-      {"bar": 512, "sec": 1458.0, "reh": "Reh. 35", "dynamic": "p", "event": "Soprano solo floating emerges seamless from the choral mist"},
-      {"bar": 560, "sec": 1594.0, "reh": "Reh. 39", "dynamic": "mp", "event": "Contralto solo pleading ('O glaube, mein Herz, o glaube')"},
-      {"bar": 616, "sec": 1754.0, "reh": "Reh. 44", "dynamic": "f", "event": "Duet of Soprano and Contralto ('O Schmerz! Du Alldurchdringer!')"},
-      {"bar": 672, "sec": 1912.0, "reh": "Reh. 47", "dynamic": "fff", "event": "Full Chorus & Orchestra eruption: 'Mit Flügeln, die ich mir errungen'"},
-      {"bar": 712, "sec": 2026.0, "reh": "Reh. 49", "dynamic": "ffff", "event": "Full Pipe Organ (Pleno) and Three Deep Bells enter: 'Sterben werd' ich, um zu leben!'"},
-      {"bar": 765, "sec": 2178.0, "reh": "Fine", "dynamic": "ffff", "event": "Triumphant E-flat major apotheosis conclusion"}
+      {
+        "bar": 1,
+        "sec": 0.19,
+        "reh": "Opening",
+        "dynamic": "ffff",
+        "event": "Wild herausfahrend: return of the Scherzo scream of despair"
+      },
+      {
+        "bar": 43,
+        "sec": 117.8,
+        "reh": "Reh. 3",
+        "dynamic": "pp",
+        "event": "Distant offstage horn call ('The Crier in the Wilderness')"
+      },
+      {
+        "bar": 62,
+        "sec": 169.94,
+        "reh": "Reh. 4",
+        "dynamic": "p",
+        "event": "Solemn Dies Irae chorale in woodwinds and pizzicato strings"
+      },
+      {
+        "bar": 97,
+        "sec": 266.5,
+        "reh": "Reh. 7",
+        "dynamic": "mp",
+        "event": "Contralto Resurrection motif foreshadowed in winds"
+      },
+      {
+        "bar": 142,
+        "sec": 390.09,
+        "reh": "Reh. 10",
+        "dynamic": "fff",
+        "event": "Blazing brass Resurrection Chorale proclamation"
+      },
+      {
+        "bar": 194,
+        "sec": 532.99,
+        "reh": "Reh. 14",
+        "dynamic": "ffff",
+        "event": "Apocalyptic percussion crescendo (Graveyards Burst Open)"
+      },
+      {
+        "bar": 220,
+        "sec": 604.44,
+        "reh": "Reh. 15",
+        "dynamic": "ff",
+        "event": "Grand Dead March (Allegro energico) in trombones and tutti"
+      },
+      {
+        "bar": 310,
+        "sec": 851.63,
+        "reh": "Reh. 21",
+        "dynamic": "f",
+        "event": "Spatial collision of onstage storm and offstage military brass band"
+      },
+      {
+        "bar": 380,
+        "sec": 1044.74,
+        "reh": "Reh. 25",
+        "dynamic": "fff",
+        "event": "Passionate F-sharp minor anguish cry ('O glaube')"
+      },
+      {
+        "bar": 448,
+        "sec": 1231.1,
+        "reh": "Reh. 29",
+        "dynamic": "pp",
+        "event": "Der große Appell: Four offstage trumpets, horns, flute & piccolo birdcall"
+      },
+      {
+        "bar": 472,
+        "sec": 1297.72,
+        "reh": "Reh. 31",
+        "dynamic": "ppp",
+        "event": "Chorus a cappella entry: 'Aufersteh'n, ja aufersteh'n wirst du'"
+      },
+      {
+        "bar": 512,
+        "sec": 1407.79,
+        "reh": "Reh. 35",
+        "dynamic": "p",
+        "event": "Soprano solo floating emerges seamless from the choral mist"
+      },
+      {
+        "bar": 560,
+        "sec": 1539.11,
+        "reh": "Reh. 39",
+        "dynamic": "mp",
+        "event": "Contralto solo pleading ('O glaube, mein Herz, o glaube')"
+      },
+      {
+        "bar": 616,
+        "sec": 1693.6,
+        "reh": "Reh. 44",
+        "dynamic": "f",
+        "event": "Duet of Soprano and Contralto ('O Schmerz! Du Alldurchdringer!')"
+      },
+      {
+        "bar": 672,
+        "sec": 1846.16,
+        "reh": "Reh. 47",
+        "dynamic": "fff",
+        "event": "Full Chorus & Orchestra eruption: 'Mit Flügeln, die ich mir errungen'"
+      },
+      {
+        "bar": 712,
+        "sec": 1956.23,
+        "reh": "Reh. 49",
+        "dynamic": "ffff",
+        "event": "Full Pipe Organ (Pleno) and Three Deep Bells enter: 'Sterben werd' ich, um zu leben!'"
+      },
+      {
+        "bar": 765,
+        "sec": 2103.0,
+        "reh": "Fine",
+        "dynamic": "ffff",
+        "event": "Triumphant E-flat major apotheosis conclusion"
+      }
     ]
   }
 }

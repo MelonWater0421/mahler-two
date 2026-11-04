@@ -1,53 +1,123 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahler Symphony No. 2 ("Resurrection") — Interactive Bilingual Symphony Atlas</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0e17">
+  <title>Mahler 2 · 全景声部与复调导览 (Resurrection · Sir Simon Rattle / BPO)</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script defer src="data.js?v=2"></script>
+  <script defer src="engine.js?v=2"></script>
+  <script defer src="app.js?v=2"></script>
 </head>
 <body>
-  <div class="atlas-container">
-    <header class="atlas-header">
+<a class="skip" href="#content" id="skipLink">跳到导览</a>
+<audio id="audio" preload="metadata"></audio>
+<header id="console" class="console">
+ <div class="console-inner">
+  <div class="console-top">
+    <div class="brand">
+      <div class="dg">EMI<small>2010</small></div>
       <div>
-        <div style="font-size:12px;font-family:monospace;color:var(--text-secondary);">
-          Gustav Mahler (1860–1911) · Sir Simon Rattle · Berliner Philharmoniker
-        </div>
-        <h1 style="font-size:24px;">C小调第二交响曲《复活》· Symphony No. 2 "Resurrection"</h1>
+        <h1 id="consoleMovement">Mahler 2</h1>
+        <p>
+          <span id="heroLength">Sir Simon Rattle · Berliner Philharmoniker</span>
+          <span class="desktop-only" id="heroSubtitle"> · 五乐章原声 · 动机积木 · 声部导览</span>
+        </p>
       </div>
-      <div style="display:flex;gap:8px;">
-        <button id="lang-toggle" class="btn">Lang: BILINGUAL</button>
-        <button id="theme-toggle" class="btn">Light / Dark</button>
-      </div>
-    </header>
-
-    <section class="panel">
-      <div style="font-size:12px;font-family:monospace;color:var(--text-secondary);">
-        Select Movement (1–5) & Rehearsal Landmark · 600-Point Normalized RMS Waveform
-      </div>
-      <div id="mvt-tabs" class="mvt-tabs"></div>
-      <canvas id="rms-canvas" class="waveform-canvas" width="1200" height="132"></canvas>
-      <div id="anchor-rail" class="anchor-rail"></div>
-    </section>
-
-    <div class="workspace-grid">
-      <section id="stage-inspector" class="panel"></section>
-      <aside class="panel">
-        <h3 style="margin-bottom:10px;font-size:16px;">190 Contiguous Granular Stages (25–35s)</h3>
-        <div id="stage-list" class="stage-stream"></div>
-      </aside>
     </div>
-
-    <section class="panel">
-      <div style="font-size:12px;font-family:monospace;color:var(--accent-gold-light);">
-        Theological, Liturgical & Philosophical Context (Dies Irae · St. Anthony · Urlicht · Klopstock)
-      </div>
-      <h2 style="font-size:20px;margin-top:4px;">宗教、神学与哲学背景深度导览 · Religious & Programmatic Atlas</h2>
-      <div id="theology-grid" class="pillars-grid"></div>
-    </section>
+    <div class="utilities">
+      <button id="langBtn" aria-label="Switch Language / 切换语言">English</button>
+      <button data-action="settings" id="btnSettings">音源与校准</button>
+      <button data-action="sources" id="btnSources">资料</button>
+      <button id="themeBtn" aria-label="切换主题">🌙 主题</button>
+    </div>
   </div>
-  <script src="data.js"></script>
-  <script src="engine.js"></script>
-  <script src="app.js"></script>
+  <nav id="movementNav" aria-label="切换乐章"></nav>
+  <div class="transport">
+    <button id="prevMovement" aria-label="上一乐章">◀ 上一章</button>
+    <button id="play" class="play" aria-label="播放">▶ 播放原声</button>
+    <div class="nudge-group">
+      <button id="back5" aria-label="后退五秒">−5s</button>
+      <button id="forward5" aria-label="前进五秒">+5s</button>
+    </div>
+    <div class="clock"><b id="currentTime">00:00</b> / <span id="duration">00:00</span></div>
+    <button id="nextMovement" aria-label="下一乐章">下一章 ▶</button>
+    <button id="loop" aria-pressed="false">🔁 段落循环</button>
+    <button id="follow" class="active" aria-pressed="true">📍 自动跟随</button>
+    <button id="continuous" class="active" aria-pressed="true">⇥ 连续乐章</button>
+    <label class="speed-label"><span class="sr-only">播放速度</span>
+      <select id="speed" aria-label="播放速度">
+        <option value="0.75">0.75×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.25">1.25×</option>
+      </select>
+    </label>
+    <button id="mute" aria-label="静音">♪</button>
+  </div>
+  <div class="wave-wrap" id="waveWrap">
+    <canvas id="wave" aria-hidden="true"></canvas>
+    <input id="scrub" type="range" min="0" max="1354" step="0.1" value="0" aria-label="播放位置">
+    <span id="waveHover" class="wave-hover" hidden></span>
+  </div>
+  <div class="wave-meta">
+    <span id="waveSource">原声波形 · 点击或拖动定位</span>
+    <span id="wavePosition"></span>
+    <div id="quickJumps" class="quick-jumps"></div>
+  </div>
+  <div class="telemetry">
+    <div class="live-row">
+      <span id="liveActBadge" class="act-badge"></span>
+      <span id="liveTimeRange" class="time-badge"></span>
+      <h2 id="liveStage"></h2>
+      <span id="syncBadge" class="sync-badge"></span>
+    </div>
+    <p id="liveFocus" class="live-focus"></p>
+    <div id="liveBlockBadges" class="block-badges"></div>
+    <div id="choirRadarGrid" class="radar-grid" aria-label="本段声部导听"></div>
+  </div>
+ </div>
+</header>
+<main id="content" tabindex="-1">
+ <section id="synthLab" class="panel synth-lab"></section>
+ <div id="motifCards" class="motif-minis"></div>
+ <section class="timeline-section">
+  <div class="panel timeline-heading">
+    <div>
+      <h2>🗺️ <span id="heroTitle"></span> · <span id="mapCount"></span> 节点全景时间轴</h2>
+      <p id="timingNote"></p>
+    </div>
+    <div id="filters" class="filters"></div>
+    <nav id="contextLinks" class="context-links" aria-label="本章的音乐线索"></nav>
+  </div>
+  <div id="timeline" class="timeline"></div>
+ </section>
+ <section class="panel chapter-intro">
+  <h2>🎼 这一章怎么听？</h2>
+  <p id="chapterIntro"></p>
+  <p id="firstMission"></p>
+  <p id="heroGerman" class="quiet"></p>
+  <div class="intro-actions">
+    <button id="startFromBeginning" class="primary-small">▶ 从头听这章</button>
+    <button data-action="overview" id="btnOverview">全曲线索</button>
+    <button data-action="glossary" id="btnGlossary">小词典</button>
+  </div>
+  <div id="nextCard" class="next-card"></div>
+ </section>
+ <footer>
+  <span id="footerTitle">Mahler 2 · Sir Simon Rattle / Berliner Philharmoniker (EMI 2010)</span>
+  <button data-action="sources" id="btnFooterSources">音源与定位说明</button>
+  <span id="footerShortcuts">Space 播放 · ← → 5 秒 · Esc 停止积木试听</span>
+ </footer>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="dialog" aria-labelledby="dialogTitle">
+  <div class="dialog-head">
+    <h2 id="dialogTitle"></h2>
+    <button id="closeDialog" aria-label="关闭">×</button>
+  </div>
+  <div id="dialogBody"></div>
+</dialog>
 </body>
 </html>
