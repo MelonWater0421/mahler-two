@@ -1,0 +1,88 @@
+{
+  "work_id": "mahler-2",
+  "title": "Symphony No. 2 in C minor (\"Resurrection\" / Auferstehung)",
+  "conductor": "Sir Simon Rattle",
+  "orchestra": "Berliner Philharmoniker",
+  "soloists": [
+    "Kate Royal (Soprano)",
+    "Magdalena Kožená (Mezzo-Soprano)"
+  ],
+  "chorus": "Rundfunkchor Berlin (Simon Halsey, Chorus Master)",
+  "venue": "Philharmonie, Berlin",
+  "sample_rate": 44100,
+  "bitrate_kbps": 192,
+  "movements": [
+    {
+      "id": 1,
+      "slug": "movement-1",
+      "file": "assets/movement-1.mp3",
+      "midi": "assets/movement-1.mid",
+      "rms": "assets/movement-1-rms.json",
+      "title_de": "I. Allegro maestoso. Mit durchaus ernstem und feierlichem Ausdruck",
+      "title_zh": "第一乐章：庄严的快板（葬礼 / Totenfeier）",
+      "title_en": "I. Allegro maestoso — Funeral Rites (Totenfeier)",
+      "key": "C minor",
+      "meter": "4/4",
+      "bars": 445,
+      "duration_sec": 1354.0,
+      "pause_after_note_zh": "乐章结束后遵照马勒总谱指示：必须保持至少五分钟的庄严静默",
+      "pause_after_note_en": "Score instruction at close: A pause of at least 5 minutes must follow the first movement"
+    },
+    {
+      "id": 2,
+      "slug": "movement-2",
+      "file": "assets/movement-2.mp3",
+      "midi": "assets/movement-2.mid",
+      "rms": "assets/movement-2-rms.json",
+      "title_de": "II. Andante moderato. Sehr gemächlich. Nie eilen",
+      "title_zh": "第二乐章：中庸的行板，非常从容，切勿匆忙",
+      "title_en": "II. Andante moderato. Very leisurely. Never rush",
+      "key": "A-flat major",
+      "meter": "3/8",
+      "bars": 299,
+      "duration_sec": 638.0
+    },
+    {
+      "id": 3,
+      "slug": "movement-3",
+      "file": "assets/movement-3.mp3",
+      "midi": "assets/movement-3.mid",
+      "rms": "assets/movement-3-rms.json",
+      "title_de": "III. In ruhig fließender Bewegung",
+      "title_zh": "第三乐章：在平静流动的律动中（圣安东尼向鱼传道）",
+      "title_en": "III. In quietly flowing motion (St. Anthony's Sermon to the Fishes)",
+      "key": "C minor",
+      "meter": "3/8",
+      "bars": 581,
+      "duration_sec": 642.0
+    },
+    {
+      "id": 4,
+      "slug": "movement-4",
+      "file": "assets/movement-4.mp3",
+      "midi": "assets/movement-4.mid",
+      "rms": "assets/movement-4-rms.json",
+      "title_de": "IV. \"Urlicht\". Sehr feierlich, aber schlicht",
+      "title_zh": "第四乐章：“原光”（Urlicht）——极其庄严而质朴",
+      "title_en": "IV. \"Urlicht\" (Primal Light). Very solemn, but simple",
+      "key": "D-flat major",
+      "meter": "4/4",
+      "bars": 140,
+      "duration_sec": 318.0
+    },
+    {
+      "id": 5,
+      "slug": "movement-5",
+      "file": "assets/movement-5.mp3",
+      "midi": "assets/movement-5.mid",
+      "rms": "assets/movement-5-rms.json",
+      "title_de": "V. Im Tempo des Scherzo. Wild herausfahrend — \"Aufersteh'n\"",
+      "title_zh": "第五乐章：谐谑曲速度，狂野迸发——“复活”终曲",
+      "title_en": "V. In the tempo of the Scherzo. Bursting forth wildly — \"Resurrection\"",
+      "key": "F minor → E-flat major",
+      "meter": "4/4 & 3/8",
+      "bars": 765,
+      "duration_sec": 2178.0
+    }
+  ]
+}
