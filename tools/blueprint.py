@@ -42,6 +42,90 @@ WORK_META = {
     }
 }
 
+RELIGIOUS_AND_PROGRAM_CONTEXT = {
+    "overview_zh": "马勒《第二交响曲“复活”》（1888–1894）不仅是一部交响巨构，更是一部跨越犹太—基督教末世论（Eschatology）、中世纪天主教礼仪圣咏、路德宗众赞歌（Chorale）传统与浪漫主义泛神论救赎哲学的精神史诗。",
+    "overview_en": "Mahler's Symphony No. 2 'Resurrection' (1888–1894) is both a monumental symphonic structure and a profound theological odyssey spanning Judeo-Christian eschatology, medieval Catholic liturgical plainchant, Lutheran chorale tradition, and universalist Romantic redemption.",
+    "pillars": [
+        {
+            "id": "buelow-epiphany",
+            "tag_zh": "创作神启 · 汉堡圣米迦勒教堂 (1894)",
+            "tag_en": "Historical Genesis · St. Michael's Church, Hamburg (1894)",
+            "title_zh": "彪罗葬礼上的灵光：克洛普施托克《复活》圣歌的降临",
+            "title_en": "The Funeral of Hans von Bülow & Klopstock's 'Auferstehung' Ode",
+            "body_zh": "1888年马勒完成第一乐章《葬礼》（Totenfeier）后，整整六年无法为这部探讨生死终极意义的交响曲找到终局。1894年3月29日，指挥大师汉斯·冯·彪罗（Hans von Bülow）的追思礼拜在汉堡圣米迦勒大教堂举行。当儿童合唱团从风琴楼座唱响18世纪诗人克洛普施托克（Friedrich Gottlieb Klopstock, 1758）的新教圣诗《复活》（“Aufersteh'n, ja aufersteh'n wirst du”）时，马勒在信中回忆道：“那声音如闪电般击中了我，一切瞬间清晰明朗——这正是我苦苦寻觅六年的创世之光！”",
+            "body_en": "After completing the first movement ('Totenfeier') in 1888, Mahler was blocked for six years, unable to conceive a finale monumental enough to answer the question of death. On March 29, 1894, attending the memorial service for conductor Hans von Bülow at St. Michael's Church in Hamburg, Mahler heard the choir intone Friedrich Gottlieb Klopstock's 1758 Protestant hymn 'Die Auferstehung.' Mahler wrote: 'It struck me like a bolt of lightning, and everything stood clear and vivid before my soul!'"
+        },
+        {
+            "id": "dies-irae-transfiguration",
+            "tag_zh": "中世纪天主教安魂弥撒序列曲 · 第1、5乐章",
+            "tag_en": "13th-Century Franciscan Requiem Sequence · Movements I & V",
+            "title_zh": "从《震怒之日》（Dies Irae）的末日审判恐惧到《复活圣咏》的逆转",
+            "title_en": "Subverting the Medieval 'Dies Irae': From Wrath to Universal Triumph",
+            "body_zh": "马勒在第一乐章展开部（排练号13，第207小节）与第五乐章（排练号4，第62小节）直接引用了13世纪方济各会修士托马斯·切拉诺（Thomas of Celano）谱写的拉丁文安魂弥撒序列曲《震怒之日》（Dies irae, dies illa — 震怒之日，世界化为灰烬）。在传统天主教教义中，此圣咏象征末日审判的恐惧与罪人的永罚；但马勒通过精妙的对位变形，让这四个下行的恐惧音符在第五乐章排练号10（第142小节）由重型铜管逆转为昂扬向上的大调《复活圣咏》，宣告爱与生命对审判恐惧的彻底超越。",
+            "body_en": "In Movement I (Reh. 13, bar 207) and Movement V (Reh. 4, bar 62), Mahler quotes the 13th-century Gregorian Requiem sequence 'Dies Irae' (Day of Wrath). In orthodox liturgy, the chant embodies terror before the Last Judgment; Mahler, however, subjects its four-note cell to contrapuntal metamorphosis at Rehearsal 10 (bar 142 of Mvt V), inverting the motif of dread into the blazing major-key Resurrection Chorale."
+        },
+        {
+            "id": "st-anthony-satire",
+            "tag_zh": "基督教圣徒寓言与存在主义危机 · 第3乐章",
+            "tag_en": "Franciscan Parable & Existential Crisis · Movement III",
+            "title_zh": "《圣安东尼向鱼传道》的宗教反讽与“绝望尖叫”（Aufschrei）",
+            "title_en": "St. Anthony's Sermon to the Fishes: Religious Satire & The Existential Scream",
+            "body_zh": "第三乐章完全建构于《少年魔角》中的宗教讽刺歌曲《帕多瓦的圣安东尼向鱼传道》。圣安东尼因教堂空无一人而走向河边向水族布道：贪婪的梭子鱼、好色的鳗鱼、伪善的螃蟹都浮出水面虔诚聆听，然而“传道一结束，众生立刻故态复萌”。马勒借此隐喻尘世宗教仪式与庸碌众生的虚伪麻木——正是这种看穿世俗虚无后的彻骨绝望，催生了第465小节撕裂苍穹的复合调性“绝望尖叫”（Aufschrei / Totengreif）。",
+            "body_en": "Movement III adapts the Wunderhorn song 'St. Anthony of Padua's Sermon to the Fishes.' Finding the church empty, St. Anthony preaches to the river creatures: greedy pikes, lustful eels, and backward-walking crabs listen piously, yet 'the sermon ended, each turned right back to its vices.' Mahler uses this Franciscan parable to expose the hollowness of worldly routine, culminating at bar 465 in the shattering bitonal 'Aufschrei' (Scream of Despair)."
+        },
+        {
+            "id": "urlicht-mysticism",
+            "tag_zh": "基督教神秘主义与路德宗圣咏 · 第4乐章",
+            "tag_en": "Marian Symbolism & Christian Mysticism · Movement IV",
+            "title_zh": "《原光》（Urlicht）：神秘主义红玫瑰与灵魂直面天使的抗辩",
+            "title_en": "'Urlicht' (Primal Light): The Mystical Rose & The Soul's Defiance of the Angel",
+            "body_zh": "第四乐章《原光》以“O Röschen rot!”（啊，小小的红玫瑰！）开启——在中世纪基督教象征体系中，“红玫瑰”既是圣母玛利亚的慈悲象征，也代表基督受难的宝血。弱音铜管奏出庄严的路德宗教堂众赞歌光环。当守门小天使（象征教条式的宗教律法）试图阻拦灵魂进入天堂时，女低音爆发出埃克哈特大师（Meister Eckhart）式的神秘主义呐喊：“不！我绝不离开！我来自上帝，必将归于上帝！”",
+            "body_en": "Movement IV ('Urlicht') opens with 'O Röschen rot!'—the mystical red rose symbolizing Marian compassion and divine grace in medieval Christian iconography—framed by a hushed Lutheran brass chorale. When the gatekeeper angel (representing dogmatic orthodoxy) tries to turn the soul away, the contralto erupts with Meister Eckhart-like mystical conviction: 'Ah no! I would not let myself be turned away! I am from God and will return to God!'"
+        },
+        {
+            "id": "eschatology-and-mahler-credo",
+            "tag_zh": "犹太羊角号（Shofar）、启示录号角与马勒的无惩罚普世救赎 · 第5乐章",
+            "tag_en": "Apocalyptic Shofar / Seven Trumpets & Mahler's Universalist Redemption · Movement V",
+            "title_zh": "《末日大召唤》与马勒对克洛普施托克圣诗的革命性改写",
+            "title_en": "'Der große Appell' & Mahler's Theological Revision of Klopstock",
+            "body_zh": "在第五乐章排练号29《末日大召唤》（Der große Appell）中，后台四方响起的小号与圆号融合了《新约·启示录》第七印的末日号角与犹太教赎罪日羊角号（Shofar）的吹奏音型（长音与急促颤音）。更为关键的是，马勒只保留了克洛普施托克原诗的前两节，删去了原诗中关于“审判台前善恶分流”的新教正统教义，从第560小节起换上自己亲笔撰写的诗篇。马勒在纲要中郑重声明：“没有惩罚，也没有罪人！只有通过炽热的爱与苦难挣得双翼、飞向神圣光明的普世升华（Sterben werd' ich, um zu leben）。”",
+            "body_en": "At Rehearsal 29 ('Der große Appell'), the four directional offstage trumpets fuse the Seven Trumpets of the Book of Revelation with the ancient Jewish Shofar calls (sustained blasts and rapid tremolos) of Yom Kippur. Crucially, Mahler kept only the first two stanzas of Klopstock's orthodox hymn and replaced the rest from bar 560 onward with his own verses. As Mahler wrote in his program note: 'There is no judgment, no sinners, no righteous, no punishment and no reward! Only overwhelming love illuminating our existence: I shall die so as to live!'"
+        }
+    ],
+    "movements_context": {
+        "1": {
+            "theme_zh": "第一乐章宗教与哲学主轴：泰坦英雄的葬礼（Totenfeier）与神义论之问",
+            "theme_en": "Movement I Theological Axis: Funeral Rites (Totenfeier) & The Question of Theodicy",
+            "summary_zh": "原为1888年独立交响诗《葬礼》（受波兰诗人密茨凯维奇《先人祭》Dziady 启发）。马勒坐在第一交响曲英雄的墓前发问：“你为何而生？为何受苦？难道生命只是一场巨大而恐怖的玩笑？”E大调第二主题（第43小节）如天国圣像画般闪现，而展开部第207小节首次引入中世纪《震怒之日》圣咏。",
+            "summary_en": "Originally composed in 1888 as the tone poem 'Totenfeier' (inspired by Adam Mickiewicz's 'Dziady' / Forefathers' Eve). Mahler stands by the grave of the hero of Symphony No. 1 and asks the ultimate question of theodicy: 'Why did you live? Why did you suffer? Is it all only a vast, frightful joke?' The E major theme (bar 43) offers a fleeting icon of paradise, while bar 207 introduces the medieval Dies Irae chant."
+        },
+        "2": {
+            "theme_zh": "第二乐章宗教与哲学主轴：尘世伊甸园的追忆与无常",
+            "theme_en": "Movement II Theological Axis: Remembrance of Earthly Eden & Transience",
+            "summary_zh": "葬礼结束后五分钟静默，记忆回溯到逝者生前未被死亡阴影玷污的纯真时光。降A大调兰德勒舞曲代表尘世的美好与温柔，而两次升G小调三连音风暴（第85、166小节）则象征伊甸园失落后的存在焦虑。",
+            "summary_en": "Following the mandatory five-minute silence after the funeral, memory turns back to an unclouded hour of earthly grace. The A-flat major Ländler embodies innocent joy, twice interrupted by G-sharp minor triplet storms (bars 85 and 166) representing the intrusion of mortality into Eden."
+        },
+        "3": {
+            "theme_zh": "第三乐章宗教与哲学主轴：方济各会寓言《向鱼传道》与信仰失落后的虚无梦魇",
+            "theme_en": "Movement III Theological Axis: Franciscan Parable & The Nightmare of Worldly Nihilism",
+            "summary_zh": "借圣安东尼向鱼群布道却徒劳无功的宗教寓言，揭示缺乏超越性信仰的世俗生活只是一场永不停歇的盲目漩涡（3/8拍永动音流）。高潮处的ffff“绝望尖叫”（第465小节）是灵魂在尘世虚无地狱中的崩溃哭喊。",
+            "summary_en": "Through the Franciscan legend of St. Anthony preaching in vain to the fishes, Mahler portrays secular existence without transcendence as a blind, perpetual 3/8 whirlpool. The ffff 'Aufschrei' at bar 465 is the soul's cry of disgust and terror at spiritual emptiness."
+        },
+        "4": {
+            "theme_zh": "第四乐章宗教与哲学主轴：《原光》（Urlicht）——赤子信仰与基督教神秘主义直觉",
+            "theme_en": "Movement IV Theological Axis: 'Urlicht' — Childlike Faith & Mystical Illumination",
+            "summary_zh": "全曲的神学核心转折。女低音在降D大调（拿波里神圣调性）中唱出《少年魔角》圣歌。铜管圣咏如教堂拱顶，首席小提琴独奏如天使引路，灵魂挣脱尘世教条的阻拦，宣告“我来自上帝，必将归于上帝”。",
+            "summary_en": "The theological pivot of the symphony. Set in sacred D-flat major, the contralto sings the Wunderhorn hymn over a hushed brass chorale. Aided by a luminous solo violin, the soul overcomes the angel's prohibition with the mystical credo: 'I am from God and will return to God!'"
+        },
+        "5": {
+            "theme_zh": "第五乐章宗教与哲学主轴：末日审判（Dies Irae）、大召唤（Appell）与普世复活（Aufersteh'n）",
+            "theme_en": "Movement V Theological Axis: Last Judgment, The Great Summons & Universal Resurrection",
+            "summary_zh": "一部浓缩的管弦乐与合唱《启示录》：从绝望尖叫重现、旷野呼喊者（后台圆号）、《震怒之日》圣咏、坟墓崩裂（打击乐大渐强）、亡灵大进军（舞台风暴与后台军乐的空间复调）、四方小号的《末日大召唤》，直到合唱团ppp无伴奏唱出《复活》，并在全音栓教堂管风琴与三口深沉大钟齐鸣中完成宇宙升华。",
+            "summary_en": "A complete symphonic Book of Revelation: progressing from the Scream of Despair, the Voice in the Wilderness (offstage horns), the Dies Irae plainchant, the bursting open of the graves (percussion crescendo), the March of the Dead (spatial polyphony of onstage storm and offstage band), and the Great Summons (four directional offstage trumpets + lone nightingale flute), to the ppp a cappella choral entry ('Aufersteh'n') and the final E-flat major apotheosis with full church organ and three deep bells."
+        }
+    }
+}
+
 ORCHESTRAL_CHOIRS = [
     {
         "id": "strings",
@@ -2279,6 +2363,7 @@ def compile_all():
 
     compiled_payload = {
         "meta": WORK_META,
+        "religious_context": RELIGIOUS_AND_PROGRAM_CONTEXT,
         "choirs": ORCHESTRAL_CHOIRS,
         "leitmotifs": THEMATIC_LEITMOTIFS,
         "movements": movements_compiled
