@@ -1,0 +1,46 @@
+{
+  "status": "PARTIAL",
+  "task_summary": "Rebuilt provisional alignment, sourced polyphonic MIDI, measured acoustic QA, and player-compatible data; documented findings in AUDIT_REPORT.md.",
+  "files_changed": [
+    "tools/anchors.json",
+    "tools/blueprint.py",
+    "data.js",
+    "assets/movement-1.mid",
+    "assets/movement-2.mid",
+    "assets/movement-3.mid",
+    "assets/movement-4.mid",
+    "assets/movement-5.mid",
+    "AUDIT_REPORT.md",
+    "HANDOFF.json"
+  ],
+  "verification_passed": false,
+  "verification_details": "Compiler exit 1: Gates 1–2 PASS; Gate 3 has 11 violations; Gate 4 passes 6/19 windows. All 19 regression checks, MIDI scheduling checks, and 16-scene DOM checks passed. Changes pushed; working tree clean; HEAD equals origin/main. Pre-existing changes preserved in stash; details in audit report.",
+  "key_metrics": [
+    {
+      "name": "anchors",
+      "value": "158",
+      "unit_or_note": "30/28/32/28/40 by movement"
+    },
+    {
+      "name": "stages",
+      "value": "194",
+      "unit_or_note": "mean 26.148814 seconds"
+    },
+    {
+      "name": "polyphony",
+      "value": "16 scenes; 80 stems; 4470 notes",
+      "unit_or_note": "0 MIDI timing mismatches or hanging notes"
+    },
+    {
+      "name": "ambiguous_anchors",
+      "value": "27",
+      "unit_or_note": "DTW path disagreement >3 seconds; maximum 46.739 seconds"
+    },
+    {
+      "name": "compiler_runtime",
+      "value": "8.832949",
+      "unit_or_note": "seconds; 6 artifacts reproduced identically"
+    }
+  ],
+  "blockers_or_risks": "Acoustic gates remain unmet; critical-edition verification is incomplete. Bundled Movement I is 102 seconds shorter than the [official tracklist](https://www.berliner-philharmoniker-recordings.com/simon-rattle-the-berlin-years-tracklist?___store=rec_en)."
+}
