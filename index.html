@@ -9,11 +9,42 @@
 <body>
   <div class="atlas-container">
     <header class="atlas-header">
-      <h1>Gustav Mahler: Symphony No. 2 "Resurrection" · Sir Simon Rattle / BPO</h1>
-      <span>190 Contiguous Stages · ZH / EN Bilingual Atlas</span>
+      <div>
+        <div style="font-size:12px;font-family:monospace;color:var(--text-secondary);">
+          Gustav Mahler (1860–1911) · Sir Simon Rattle · Berliner Philharmoniker
+        </div>
+        <h1 style="font-size:24px;">C小调第二交响曲《复活》· Symphony No. 2 "Resurrection"</h1>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button id="lang-toggle" class="btn">Lang: BILINGUAL</button>
+        <button id="theme-toggle" class="btn">Light / Dark</button>
+      </div>
     </header>
-    <canvas id="rms-canvas" class="waveform-canvas" width="1200" height="140"></canvas>
-    <div id="stage-list" class="stage-grid"></div>
+
+    <section class="panel">
+      <div style="font-size:12px;font-family:monospace;color:var(--text-secondary);">
+        Select Movement (1–5) & Rehearsal Landmark · 600-Point Normalized RMS Waveform
+      </div>
+      <div id="mvt-tabs" class="mvt-tabs"></div>
+      <canvas id="rms-canvas" class="waveform-canvas" width="1200" height="132"></canvas>
+      <div id="anchor-rail" class="anchor-rail"></div>
+    </section>
+
+    <div class="workspace-grid">
+      <section id="stage-inspector" class="panel"></section>
+      <aside class="panel">
+        <h3 style="margin-bottom:10px;font-size:16px;">190 Contiguous Granular Stages (25–35s)</h3>
+        <div id="stage-list" class="stage-stream"></div>
+      </aside>
+    </div>
+
+    <section class="panel">
+      <div style="font-size:12px;font-family:monospace;color:var(--accent-gold-light);">
+        Theological, Liturgical & Philosophical Context (Dies Irae · St. Anthony · Urlicht · Klopstock)
+      </div>
+      <h2 style="font-size:20px;margin-top:4px;">宗教、神学与哲学背景深度导览 · Religious & Programmatic Atlas</h2>
+      <div id="theology-grid" class="pillars-grid"></div>
+    </section>
   </div>
   <script src="data.js"></script>
   <script src="engine.js"></script>
